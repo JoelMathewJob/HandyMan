@@ -11,7 +11,7 @@ function ToolSection() {
         {tools.map((tool) => {
           return(
           <li key={tool.name}>
-            <Card path={tool.path} name={tool.name} desc={tool.desc}/>
+            <Card path={tool.path} name={tool.name} desc={tool.desc} icon={tool.icon}/>
           </li>)
         })}
       </ul>
