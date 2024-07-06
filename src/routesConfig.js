@@ -1,9 +1,10 @@
-import React, { lazy } from 'react';
+import  { lazy } from 'react';
 
 
 const QR = lazy(() => import('./tools/qrgenerator'));
 const Wordcloud = lazy(() => import('./tools/wordcloudgenerator'));
 const ImagetoText = lazy(() => import('./tools/imagetotext'));
+const Colourgradient = lazy(() => import('./tools/Csscolourgradient/csscolourgradient'));
 
 const routes = [
     {
@@ -16,7 +17,7 @@ const routes = [
 
     {
         icon: '⛅',
-        name: 'WordCloud Generator',
+        name: 'Word Cloud Generator',
         path: '/wordcloudgenerator',
         component: Wordcloud,
         desc: 'Creates Wordcloud Using Texts'
@@ -27,6 +28,69 @@ const routes = [
         path: '/imagetotext',
         component: ImagetoText,
         desc: 'Scans Texts from the Image '
+    },
+    {
+        icon: '🎨',
+        name: ' CSS Colour Gradient',
+        path: '/colourgradient',
+        component: Colourgradient,
+        desc: 'Creates Colour gradients for your choice of colours in CSS.'
+    },
+    {
+        icon: '🎨',
+        name: 'Tailwind Colour Gradient',
+        path: '/colourgradient',
+        component: Colourgradient,
+        desc: 'Creates Colour gradients for your choice of colours in TailwindCSS.'
+    },
+    {
+        icon: '🎨',
+        name: 'Colour Gradient',
+        path: '/colourgradient',
+        component: Colourgradient,
+        desc: 'Creates Colour gradients for your choice of colours.'
+    },
+    {
+        icon: '🎨',
+        name: 'Colour Gradient',
+        path: '/colourgradient',
+        component: Colourgradient,
+        desc: 'Creates Colour gradients for your choice of colours.'
+    },
+    {
+        icon: '🎨',
+        name: 'Colour Gradient',
+        path: '/colourgradient',
+        component: Colourgradient,
+        desc: 'Creates Colour gradients for your choice of colours.'
+    },
+    {
+        icon: '🎨',
+        name: 'Colour Gradient',
+        path: '/colourgradient',
+        component: Colourgradient,
+        desc: 'Creates Colour gradients for your choice of colours.'
+    },
+    {
+        icon: '🎨',
+        name: 'Colour Gradient',
+        path: '/colourgradient',
+        component: Colourgradient,
+        desc: 'Creates Colour gradients for your choice of colours.'
+    },
+    {
+        icon: '🎨',
+        name: 'Colour Gradient',
+        path: '/colourgradient',
+        component: Colourgradient,
+        desc: 'Creates Colour gradients for your choice of colours.'
+    },
+    {
+        icon: '🎨',
+        name: 'Colour Gradient',
+        path: '/colourgradient',
+        component: Colourgradient,
+        desc: 'Creates Colour gradients for your choice of colours.'
     },
     // Add more routes here
 ];
