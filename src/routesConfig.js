@@ -5,6 +5,7 @@ const QR = lazy(() => import('./tools/qrgenerator'));
 const Wordcloud = lazy(() => import('./tools/wordcloudgenerator'));
 const ImagetoText = lazy(() => import('./tools/imagetotext'));
 const Colourgradient = lazy(() => import('./tools/Csscolourgradient/csscolourgradient'));
+const PasswordGenerator = lazy(() => import('./tools/passwordgenerator'));
 
 const routes = [
     {
@@ -37,11 +38,11 @@ const routes = [
         desc: 'Creates Colour gradients for your choice of colours in CSS.'
     },
     {
-        icon: '🎨',
-        name: 'Tailwind Colour Gradient',
-        path: '/colourgradient',
-        component: Colourgradient,
-        desc: 'Creates Colour gradients for your choice of colours in TailwindCSS.'
+        icon: '🔐',
+        name: 'Password Generator',
+        path: '/passwordgenerator',
+        component: PasswordGenerator,
+        desc: 'Creates best and complex Passwords for you.'
     },
     {
         icon: '🎨',
