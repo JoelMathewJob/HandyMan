@@ -27,3 +27,13 @@ To start using HandyMan:
    ```bash
    git clone https://github.com/JoelMathewJob/HandyMan.git
    cd HandyMan
+   
+2. Install Dependencies:
+   ```bash  
+   npm install
+   
+3. Run:
+   ```bash
+   npm run dev
+   
+   
