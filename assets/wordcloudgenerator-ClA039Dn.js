@@ -1,4 +1,4 @@
-import{c as Ee,g as Fe,r as le,j as R}from"./index-Cx9n1fWL.js";var ge={exports:{}};/*!
+import{c as Ee,g as Fe,r as le,j as R}from"./index-Bj4j_vaj.js";var ge={exports:{}};/*!
  * wordcloud2.js
  * http://timdream.org/wordcloud2.js/
  *
