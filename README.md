@@ -11,13 +11,12 @@ HandyMan is a comprehensive website providing a wide range of tools for both dev
 ## Tools Available
 
 - **QR Code Generator**: Generate QR codes for URLs, texts, and more.
-- **Authentication Forms**: Ready-made components for login and signup forms.
-- **Badges**: Create visually appealing badges for various purposes.
-- **Breadcrumbs**: Implement breadcrumb navigation effortlessly.
-- **Button Groups**: Group buttons for better organization and functionality.
-- **Checkboxes**: Customize checkboxes for your applications.
-- **Details Lists**: Display detailed information in a structured format.
-- **Dividers**: Add separators between sections or elements.
+- **Image To Text**: Image To Text .
+- **Word Cloud Generator**: Generates wordcloud from the given text.
+- **CSS Colour Gradient**: Cretes Colour gradient in css .
+- **Password Generator**: Generates Password for u .
+- 
+
 
 ## Getting Started
 
@@ -26,5 +25,5 @@ To start using HandyMan:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/HandyMan.git
+   git clone https://github.com/JoelMathewJob/HandyMan.git
    cd HandyMan
