@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route key='/' path='/' element={<Home />} />
+          <Route key='/HandyMan' path='/HandyMan' element={<Home />} />
           <Route key='/about' path='/about' element={<About />} />
           {routes.map(({ path, component: Component }) => (
             <Route key={path} path={path} element={<Component />} />
