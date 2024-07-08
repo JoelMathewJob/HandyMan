@@ -10,10 +10,10 @@ HandyMan is a comprehensive website providing a wide range of tools for both dev
 
 ## Tools Available
 
-- **QR Code Generator**: Generate QR codes for URLs, texts, and more.
-- **Image To Text**: Image To Text .
-- **Word Cloud Generator**: Generates wordcloud from the given text.
-- **CSS Colour Gradient**: Cretes Colour gradient in css .
+- **QR Code Generator**: Generate QR codes for URLs, texts.
+- **Image To Text**: Scan the image to get Text.
+- **Word Cloud Generator**: Generates word cloud from the given text.
+- **CSS Colour Gradient**: Cretes Colour gradient in CSS .
 - **Password Generator**: Generates Password for u .
 - 
 
