@@ -6,30 +6,30 @@ function QrGenerator() {
 
  
   return (
-    <div className='m-7 border border-gray-300 p-7 rounded-lg shadow-md min-h-screen flex flex-col'>
+    <div className='flex flex-col min-h-screen border border-gray-300 rounded-lg shadow-md m-7 p-7'>
       <div>
-        <h1 className='font-bold text-4xl'>QR Code Generator</h1>
-        <p className='text-lg m-2 text-gray-500'>Generate QR Code for your URL, Texts and share it with your friends and family.</p>
+        <h1 className='text-4xl font-bold'>QR Code Generator</h1>
+        <p className='m-2 text-lg text-gray-500'>Generate QR Code for your URL, Texts and share it with your friends and family.</p>
       </div>
 
       {/* logic */}
 
-      <div className='flex flex-col justify-center  p-5 w-full '>
-        <form className='lg:w-1/3 self-center w-3/4 text-center m-5' >
-          <label htmlFor='UserEmail' className='block font-medium text-gray-700 text-lg'>
+      <div className='flex flex-col justify-center w-full p-5 '>
+        <form className='self-center w-3/4 m-5 text-center lg:w-1/3' >
+          <label htmlFor='UserEmail' className='block text-lg font-medium text-gray-700'>
             Enter Text or URL
           </label>
           <input
             type='text'
             id='UserEmail'
             placeholder='Text/URL'
-            className='mt-1 w-full rounded-md border-gray-300 border p-2 shadow-sm sm:text-sm'
+            className='w-full p-2 mt-1 border border-gray-300 rounded-md shadow-sm sm:text-sm'
             onChange={(e) => setLink(e.target.value)}
           />
           
         </form>
 
-        <div className='bg-white self-center p-2 m-5'>
+        <div className='self-center p-2 m-5 bg-white'>
           <QRCode value={link} size={250} />
         </div>
       </div>

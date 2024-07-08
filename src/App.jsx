@@ -4,6 +4,7 @@ import Loader from './components/loader';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Home from './pages/home';
+import About from './pages/about';
 import routes from './routesConfig';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route key='/' path='/' element={<Home />} />
+          <Route key='/about' path='/about' element={<About />} />
           {routes.map(({ path, component: Component }) => (
             <Route key={path} path={path} element={<Component />} />
           ))}
