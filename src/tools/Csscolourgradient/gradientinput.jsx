@@ -1,5 +1,4 @@
 import React from 'react';
-import { HexColorPicker } from 'react-colorful';
 
 function GradientInput({ colors, onColorChange, onAlphaChange, addColor, removeColor }) {
   return (
@@ -8,7 +7,13 @@ function GradientInput({ colors, onColorChange, onAlphaChange, addColor, removeC
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5 md:grid-cols-3">
         {colors.map((color, index) => (
           <div key={index} className="flex flex-col items-center justify-center p-4 bg-white border rounded shadow-md">
-            <HexColorPicker color={color.color} onChange={newColor => onColorChange(index, newColor)} />
+            <input
+              type="color"
+              value={color.color}
+              onChange={e => onColorChange(index, e.target.value)}
+              className="w-full h-20 p-2 border rounded"
+            />
+            
             <input
               type="text"
               value={color.color}
@@ -32,7 +37,7 @@ function GradientInput({ colors, onColorChange, onAlphaChange, addColor, removeC
             {colors.length > 2 && (
               <button
                 onClick={() => removeColor(index)}
-                className="w-full px-4 py-2 mt-4 text-white bg-red-500 rounded"
+                className="px-4 py-2 mt-4 text-white bg-red-500 rounded "
               >
                 Remove
               </button>

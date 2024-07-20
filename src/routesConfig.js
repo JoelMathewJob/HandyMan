@@ -6,6 +6,8 @@ const Wordcloud = lazy(() => import('./tools/wordcloudgenerator'));
 const ImagetoText = lazy(() => import('./tools/imagetotext'));
 const Colourgradient = lazy(() => import('./tools/Csscolourgradient/csscolourgradient'));
 const PasswordGenerator = lazy(() => import('./tools/passwordgenerator'));
+const RecipeGenerator = lazy(()=> import('./tools/Recipegenerator/recipegenerator'))
+const MarkdownEditor = lazy(()=> import('./tools/markdowneditor'))
 
 const routes = [
     {
@@ -45,54 +47,21 @@ const routes = [
         desc: 'Creates best and complex Passwords for you.'
     },
     {
-        icon: '🎨',
-        name: 'Colour Gradient',
-        path: '/colourgradient',
-        component: Colourgradient,
-        desc: 'Creates Colour gradients for your choice of colours.'
+        icon: '🍕',
+        name: 'Smart Recipe Generator',
+        path: '/recipe-generator',
+        component: RecipeGenerator,
+        desc: 'Provides recipes with ingredients avaliable with u.'
     },
     {
-        icon: '🎨',
-        name: 'Colour Gradient',
-        path: '/colourgradient',
-        component: Colourgradient,
-        desc: 'Creates Colour gradients for your choice of colours.'
+        icon: '📝',
+        name: 'Markdown Editor',
+        path: '/markdown-editor',
+        component: MarkdownEditor ,
+        desc: 'Create, Edit, Modify your markdown file. '
     },
-    {
-        icon: '🎨',
-        name: 'Colour Gradient',
-        path: '/colourgradient',
-        component: Colourgradient,
-        desc: 'Creates Colour gradients for your choice of colours.'
-    },
-    {
-        icon: '🎨',
-        name: 'Colour Gradient',
-        path: '/colourgradient',
-        component: Colourgradient,
-        desc: 'Creates Colour gradients for your choice of colours.'
-    },
-    {
-        icon: '🎨',
-        name: 'Colour Gradient',
-        path: '/colourgradient',
-        component: Colourgradient,
-        desc: 'Creates Colour gradients for your choice of colours.'
-    },
-    {
-        icon: '🎨',
-        name: 'Colour Gradient',
-        path: '/colourgradient',
-        component: Colourgradient,
-        desc: 'Creates Colour gradients for your choice of colours.'
-    },
-    {
-        icon: '🎨',
-        name: 'Colour Gradient',
-        path: '/colourgradient',
-        component: Colourgradient,
-        desc: 'Creates Colour gradients for your choice of colours.'
-    },
+    
+    
     // Add more routes here
 ];
 
